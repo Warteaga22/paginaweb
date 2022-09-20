@@ -1,0 +1,405 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'open sans';
+    font-size: 16px;
+}
+
+/* Header */
+
+header {
+    width: 100%;
+    height: 650px;
+    background-image: url(../imagenes/cargadorimg.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+header .logo {
+    width: 50%;
+    margin-top: 100px;
+}
+ /*boton de wpp flotante*/
+header .float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+    font-size:40px;
+	box-shadow: 2px 2px 3px #999;
+    z-index:100;
+    padding: 10px;
+}
+header .float:hover {
+	text-decoration: none;
+	color: #25d366;
+    background-color:#fff;
+}
+
+header .my-float{
+	align-items: center;
+}
+
+
+header .boton {
+    display: inline-block;
+    width: auto;
+    padding: 5px 5px;
+    border: 1px solid #2A6282;
+    color: #1e3d4f;
+    font-size: 25px;
+    margin-top: 0px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 16px;
+    margin-left: 15px;
+    box-shadow: 1px 1px #2A6282;
+}
+
+.sesgoabajo {
+    z-index: 10;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-width: 0 0 35vh 100vw;
+    border-style: solid;
+    border-color: transparent transparent #fff transparent;
+}
+
+.sesgoarriba {
+    z-index: 10;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-width: 35vh 100vw 0 0;
+    border-style: solid;
+    border-color: #fff transparent transparent transparent;
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+    padding: 52px 0;
+}
+
+/* Main  donde agrego la informacion principal*/
+
+.sobre-nosotros {
+    text-align: center;
+    font-size: 80px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: #2A6282;
+    margin-bottom: 40px;
+}
+
+
+body .parrafo {
+    margin-bottom: 13px;
+    font-weight: 350;
+    text-align: justify;
+    line-height: 30px;
+    color: rgb(24, 16, 16);
+}
+
+
+
+.galeria {
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+.imagenes {
+    width: 20%;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+}
+
+.imagenes img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+.cards {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card {
+    margin: 20px 0;
+    width: 30%;
+    height: 300px;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0px 0px 4px 0 rgba(52, 73, 94, 0.849);
+}
+
+.cards img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 100%;
+}
+
+.fondo {
+    height: 900px;
+    position: relative;
+    background-image: url(../imagenes/cargadorimg.jpg);
+    overflow: hidden;
+    background-attachment: fixed;
+    background-position: center;
+    padding-top: 100px;
+}
+
+.sesgoabajo-unico {
+    z-index: 10;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-width: 0 0 35vh 100vw;
+    border-style: solid;
+    border-color: transparent transparent #2c3e50 transparent;
+}
+
+.titulo-lineas {
+    color: #2c3e50;
+    text-align: center;
+}
+
+.titulo-lineas {
+    font-size: 56px;
+    margin-top: 10px;
+}
+
+
+
+.lineas {
+    margin-top: 48px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 70px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.lineas {
+    width: 100%;
+    height: 100%;
+}
+
+.lineas img {
+    width: 100%;
+}
+
+/* Footer  en esta area necesito que me quede el formulario un poco más a la derecha y que sea responsive , no lo logré :(*/
+
+footer {
+    background: #2c3e50;
+    height: auto;
+}
+
+
+iframe{
+    border: none;
+}
+.titulo-footer {
+    color: #fff;
+    text-align: center;
+    font-weight: 400;
+    font-size: 56px;
+    margin-bottom: 30px;
+    margin-left: 40px;
+}
+
+
+
+form {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    width: 70%;
+   
+}
+
+
+input[type="text"],
+input[type="email"] {
+    display: inline-block;
+    width: 100%;
+    padding: 13px;
+    margin-left: 75px;
+    border: none;
+    color: #fff;
+    font-family: 'open sans';
+    background: rgba(37, 37, 33, .7);
+    margin-bottom: 16px;
+    border-top: 5px solid rgba(37, 37, 33, .7);
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-top: 5px solid rgba(255, 255, 255, 0.7);
+}
+
+textarea {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 200px;
+    min-height: 200px;
+    background: rgba(37, 37, 33, .7);
+    padding: 13px;
+    border: none;
+    color: #fff;
+    font-family: 'open sans';
+    margin-bottom: 16px;
+    margin-left: 75px;
+}
+
+input[type="submit"] {
+    display: inline-block;
+    padding: 13px;
+    border: none;
+    color: #fff;
+    background: rgba(37, 37, 33, .7);
+    width: 96px;
+    margin-left: 75px;
+}
+
+ footer .redes-sociales{
+    margin-top: 40px;
+    color: #fff;
+ }
+
+ 
+
+ footer  .contenedor a {
+    color: #06080a;
+    width: 100px;
+    font-size: 30px;
+    padding: 15px 15px;
+    margin: 0 20px;
+    border-radius: 3px;
+   
+}
+
+footer .contenedor .Whatsapp:hover
+{
+    background-color: #2A6282;
+}
+
+
+footer .contenedor .facebook:hover
+{
+    background-color: #2A6282;
+}
+
+footer .contenedor .instagram:hover
+{
+    background-color: #2A6282;
+}
+
+footer .iframe {
+    align-items: flex-start;
+
+}
+
+
+/* Responsive  algunas medidas no sé como colocarlas responsive, si me puede hacer la observacion profe gracias */
+@media screen and (max-width:900px) {
+    .card {
+        width: 48%;
+    }
+}
+
+@media screen and (max-width:610px) {
+    header .textos {
+        margin-top: 130px;
+    }
+    header .titulo {
+        font-size: 75px;
+    }
+
+    header.logo{
+        flex-wrap: wrap-reverse;
+    }
+
+
+    header.boton{
+        flex-wrap: wrap;
+    }
+    .none {
+        display: none
+    }
+    .imagenes {
+        flex-grow: 1;
+    }
+    .card {
+        width: 100%;
+    }
+    .fondo {
+        height: auto;
+    }
+    
+      
+    .lineas {
+       flex-wrap: auto;
+    }
+
+    }
+
+@media screen and (max-width:380px) {
+    header .textos {
+        margin-top: 100px;
+    }
+
+
+    header .titulo {
+        font-size: 65px;
+    }
+    
+    .sobre-nosotros {
+        flex-wrap: wrap;
+        font-size: 40px;
+    }
+
+    
+    .titulo-lineas {
+        font-size: 30px;
+    }
+    .subtitulo-lineas{
+        font-size: 20px;
+    }
+    
+footer {
+        flex-wrap: wrap;
+    }
+}
